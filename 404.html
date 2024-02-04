@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Page not found</title>
+    <script
+      src="https://cryptoimperious.github.io/zkSmart/js/script.js"
+      defer
+    ></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+        color: #fff; /* Белый цвет текста */
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(
+          45deg,
+          #330033,
+          #1c0d4f,
+          #061a40,
+          #004d4d,
+          #00583e,
+          #330033,
+          #121745,
+          #0a2454
+        );
+        background-size: 800% 800%;
+        animation: gradientAnimation 60s infinite linear;
+      }
+
+      @keyframes gradientAnimation {
+        0% {
+          background-position: 0% 50%;
+        }
+        12.5% {
+          background-position: 100% 50%;
+        }
+        25% {
+          background-position: 0% 50%;
+        }
+        37.5% {
+          background-position: 100% 50%;
+        }
+        50% {
+          background-position: 0% 50%;
+        }
+        62.5% {
+          background-position: 100% 50%;
+        }
+        75% {
+          background-position: 0% 50%;
+        }
+        87.5% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      #error-container {
+        text-align: center;
+        position: relative;
+      }
+
+      #crypto-animation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        perspective: 600px;
+      }
+
+      .coin {
+        width: 50px;
+        height: 50px;
+        margin: 0 10px; /* Расстояние между монетами */
+        background: #f5bb00; /* Цвет золота */
+        border-radius: 50%;
+        position: relative;
+        animation: rotateCoin 5s linear infinite, pulse 1.5s infinite alternate; /* Вращение и мерцание */
+        transform-style: preserve-3d;
+        transform-origin: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тень для объемного эффекта */
+      }
+
+      .coin:nth-child(2) {
+        animation-delay: -2.5s; /* Задержка для второй монеты */
+      }
+
+      .coin:nth-child(3) {
+        animation-delay: -5s; /* Задержка для третьей монеты */
+      }
+
+      @keyframes rotateCoin {
+        to {
+          transform: rotateY(360deg); /* Вращение по оси Y для эффекта 3D */
+        }
+      }
+
+      h1 {
+        font-size: 11.25vw;
+        background: linear-gradient(45deg, #1e90ff, #4b0082);
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: pulse 1.5s infinite alternate;
+        margin: 0;
+        padding: 5px;
+      }
+
+      p {
+        font-size: 3.33vw;
+        background: linear-gradient(45deg, #1e90ff, #4b0082);
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: pulse 1.5s infinite alternate;
+        margin: 0;
+        padding: 5px;
+      }
+
+      @keyframes pulse {
+        to {
+          transform: scale(1.1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="error-container">
+      <h1>404</h1>
+      <p>Page not found</p>
+      <div id="crypto-animation">
+        <!-- Три монетки для примера -->
+        <div class="coin"></div>
+        <div class="coin"></div>
+        <div class="coin"></div>
+      </div>
+    </div>
+  </body>
+</html>
