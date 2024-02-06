@@ -1,7 +1,7 @@
 (function () {
   const clientData = {
     deal: "A3P9P2",
-    seller: "@SELLER@",
+    seller: "@SELLER1@",
     buyer: "@BUYER@",
     subject: "@SUBJECT@",
     price: "@PRICE@",
