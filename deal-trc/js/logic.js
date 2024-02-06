@@ -6,8 +6,7 @@
     subject: "@SUBJECT@",
     price: "@PRICE@",
     wallet: "@WALLET@",
-    transaction_id: "@transaction_id@",
-    type: 'eth'
+    transaction_id: "@transaction_id@"
   };
 
   Object.entries(clientData).forEach(([key, value]) => {
