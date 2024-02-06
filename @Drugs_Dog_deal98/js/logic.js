@@ -1,6 +1,6 @@
 (function () {
   const clientData = {
-    deal: "№98",
+    deal: "98",
     seller: "@Drugs_Dog",
     buyer: "@kolavand",
     subject: "Wise personal + ByBit(EU) same name",
