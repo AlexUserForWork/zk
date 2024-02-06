@@ -5,8 +5,8 @@
     buyer: "老子财神",
     subject: "Wise personal + ByBit (EU)",
     price: "215 USDT",
-    wallet: "THvaJGW6nrmBHhZm5emK8YZ8wsW4tSHtX4",
-    transaction_id: "559a78fe4e009532e0df2f5de6c402e611f1931bd669a21b7b8acb31833f9f1e",
+    wallet: "THvaJG...tSHtX4",
+    transaction_id: "559a78...3f9f1e",
     type: ''
   };
 
