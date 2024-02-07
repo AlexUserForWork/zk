@@ -3,7 +3,7 @@
     deal: "001",
     seller: "@TopSeller",
     buyer: "@JackMoris",
-    subject: "@SUBJECT@",
+    subject: "Wise personal",
     price: "50 USDT",
     wallet: "TSCobv...htLczx",
     transaction_id: "8fe660...d5915e"
