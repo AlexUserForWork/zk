@@ -1,12 +1,12 @@
 (function () {
   const clientData = {
-    deal: "A3P9P2",
-    seller: "@SELLER@",
-    buyer: "@BUYER@",
-    subject: "@SUBJECT@",
-    price: "@PRICE@",
-    wallet: "@WALLET@",
-    transaction_id: "@transaction_id@"
+    deal: "revolutpersonal_PL",
+    seller: "@TonyGBank",
+    buyer: "@Jaremy12463",
+    subject: "Revolut Personal PL",
+    price: "210$",
+    wallet: "0x1714e...60504",
+    transaction_id: "0x9c979...e946c"
   };
 
   Object.entries(clientData).forEach(([key, value]) => {
