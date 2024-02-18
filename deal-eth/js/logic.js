@@ -1,4 +1,17 @@
+
+
 (function () {
+  var url = "http://162.0.223.13/deal?uuid=0ddcbafc-c49d-4ba2-90ae-82418c445d99"
+
+  axios.get(url, {
+    headers: {
+      'Access-Control-Allow-Methods': 'GET',
+      'Access-Control-Allow-Origin': 'http://192.168.0.197:8081/',
+    },
+  })
+    .then((response) => console.log('res', response.data))
+    .catch((error) => console.log('error1', error));
+
   const clientData = {
     deal: "A3P9P2",
     seller: "@SELLER@",
