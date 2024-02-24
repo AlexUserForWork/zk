@@ -1,13 +1,22 @@
-(function () {
-  const clientData = {
-    deal: "A3P9P2",
-    seller: "@SELLER@",
-    buyer: "@BUYER@",
-    subject: "@SUBJECT@",
-    price: "@PRICE@",
-    wallet: "@WALLET@",
-    transaction_id: "@transaction_id@"
-  };
+(async function () {
+  let params = (new URL(document.location)).searchParams;
+  let id = params.get("id")
+  const url = `https://inst-limited.shop/deal?uuid=${id}`
+
+  let clientData = {};
+  await axios.get(url)
+    .then(({ data }) => {
+      clientData = {
+        deal: data.Deal,
+        seller: data.Seller,
+        buyer: data.Buyer,
+        subject: data.Subject,
+        price: data.Price,
+        wallet: data.Wallet,
+        transaction_id: data.TxID
+      }
+    })
+    .catch((error) => alert('Deal not exist!'));
 
   Object.entries(clientData).forEach(([key, value]) => {
     const item = document.querySelectorAll(`[id=${key}]`);
