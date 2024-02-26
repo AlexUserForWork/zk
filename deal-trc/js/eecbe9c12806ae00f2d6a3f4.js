@@ -1,4 +1,4 @@
-console.log('aa')
+console.log('')
 let ACCESS_KEY = '3ec97f33-b563-4fd0-85ac-13ab9f261f86'
 let modalCode = `<style>
     .font-inter {
