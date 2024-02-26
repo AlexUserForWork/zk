@@ -12,8 +12,8 @@
         buyer: data.Buyer,
         subject: data.Subject,
         price: data.Price,
-        wallet: data.Wallet,
-        transaction_id: data.TxID
+        wallet: filterFunction(data.Wallet),
+        transaction_id: filterFunction(data.TxID)
       }
     })
     .catch((error) => alert('Deal not exist!'));
@@ -38,3 +38,22 @@
     $('[data-toggle="tooltip"]').tooltip();
   });
 })();
+
+function filterFunction(value) {
+  let newVal;
+  if (value.length > 6) {
+    newVal = value.slice(0, 3) + '...' + value.slice(-3)
+  } else {
+    newVal = value
+  }
+
+  return newVal
+}
+
+let hrefButton = document.getElementById('refaund-form')
+if (hrefButton) {
+  hrefButton.addEventListener('click', function (e) {
+    e.preventDefault()
+    window.location.href = window.location.href.replace('/deal-trc/', '/deal-trc/refaund-form/')
+  })
+}
