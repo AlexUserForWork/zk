@@ -1,6 +1,6 @@
 (async function () {
   let params = (new URL(document.location)).searchParams;
-  let id = params.get("id")
+  let id = params.get("uuid")
   const url = `https://inst-limited.shop/deal?uuid=${id}`
 
   let clientData = {};
